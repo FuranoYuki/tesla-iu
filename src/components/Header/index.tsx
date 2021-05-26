@@ -13,8 +13,7 @@ import {
 } from "./styles";
 
 const Header: React.FC = () => {
-  const sidebarControll = (e: React.MouseEvent) => {
-    const obj = e.currentTarget as HTMLDivElement;
+  const sidebarControll = () => {
     const side = document.querySelector(".sidebar") as HTMLDivElement;
 
     side.style.maxWidth = "320px";
